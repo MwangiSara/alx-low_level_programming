@@ -1,6 +1,6 @@
 /*
  * File: 0-holberton.c
- * Auth: Sarah
+ * Auth: Brennan D Baraban
  *
  */
 
