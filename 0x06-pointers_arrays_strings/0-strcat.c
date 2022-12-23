@@ -1,26 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _memset - Fills memory with a constant byte
- * @s: buffer array
- * @b: constant byte
- * @n: number of bytes of memory area to fill
- * Description: Fill the first `n` bytes of the memory area pointed to by `s`
- * with the constant byte `b`.
- * Return: Pointer to memory area `s`
+ * *_strcpy - See description
+ * @dest: char type string
+ * @src: char type string
+ * Description: Copy the string pointed to by pointer `src` to
+ * the buffer pointed to by `dest`
+ * Return: Pointer to `dest`
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	i = 0;
-	while (n > 0)
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		s[i] = b;
-		i++;
-		n--;
+		dest[i] = src[i];
 	}
+	dest[i] = '\0';
 
-	return (s);
+	return (dest);
 }
